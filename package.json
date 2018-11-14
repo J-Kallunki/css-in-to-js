@@ -7,7 +7,7 @@
     "test": "mocha --require @babel/polyfill --require @babel/register 'src/*.test.js'",
     "test:watch": "mocha -w --require @babel/polyfill --require @babel/register 'src/*.test.js'",
     "prebuild": "rimraf dist",
-    "build": "babel src --copy-files --out-dir dist --ignore *.test.js"
+    "build": "babel src --out-dir dist --ignore 'src/*.test.js'"
   },
   "repository": {
     "type": "git",
