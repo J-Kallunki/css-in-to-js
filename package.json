@@ -1,5 +1,5 @@
 {
-  "name": "css-in-to-js",
+  "name": "@jkallunki/css-in-to-js",
   "version": "1.0.0",
   "description": "CSS to CSS-in-JS and Styled converter",
   "main": "dist/index.js",
