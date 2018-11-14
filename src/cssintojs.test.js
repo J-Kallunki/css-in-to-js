@@ -1,5 +1,5 @@
 import { expect } from 'chai';
-import { cssToJs, minifyCss } from './csstocssinjs';
+import { cssToJs, minifyCss } from './cssintojs';
 
 const css = `html {
   line-height: 1.15; /* 1 */

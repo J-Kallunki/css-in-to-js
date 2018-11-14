@@ -1,1 +1,1 @@
-export { cssToJs, minifyCss } from './csstocssinjs';
+export { cssToJs, minifyCss } from './cssintojs';
