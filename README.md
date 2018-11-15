@@ -1,15 +1,15 @@
-# @jkallunki/css-in-to-js
+# @j-kallunki/css-in-to-js
 Convert any CSS-string to styled-format object or object with CSS-declarations as strings.
 
 ## Usage
 
 ```
-yarn add @jkallunki/css-in-to-js
+yarn add @j-kallunki/css-in-to-js
 OR
-npm install --save @jkallunki/css-in-to-js
+npm install --save @j-kallunki/css-in-to-js
 ```
 ```
-import { cssToJs } from '@jkallunki/css-in-to-js';
+import { cssToJs } from '@j-kallunki/css-in-to-js';
 const cssObject = cssToJs(cssString);
 ```
 
