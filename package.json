@@ -46,8 +46,11 @@
     "babel-plugin-istanbul": "5.1.0",
     "chai": "4.2.0",
     "cross-env": "5.2.0",
+    "husky": "1.1.4",
+    "lint-staged": "8.0.4",
     "mocha": "5.2.0",
     "nyc": "13.1.0",
+    "prettier": "1.15.2",
     "rimraf": "2.6.2"
   },
   "nyc": {
@@ -56,5 +59,17 @@
     ],
     "sourceMap": false,
     "instrument": false
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "pre-push": "yarn validate"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
+      "prettier --single-quote --write",
+      "git add"
+    ]
   }
 }
