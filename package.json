@@ -6,6 +6,7 @@
   "scripts": {
     "test": "mocha --require @babel/polyfill --require @babel/register 'src/*.test.js'",
     "test:watch": "yarn test --watch",
+    "cover": "cross-env NODE_ENV=test nyc --reporter=lcov mocha 'src/*.test.js'",
     "prebuild": "rimraf dist",
     "build": "babel src --out-dir dist --ignore 'src/*.test.js'"
   },
@@ -40,7 +41,16 @@
     "@babel/register": "7.0.0",
     "babel-plugin-inline-import": "3.0.0",
     "chai": "4.2.0",
+    "cross-env": "5.2.0",
     "mocha": "5.2.0",
+    "nyc": "13.1.0",
     "rimraf": "2.6.2"
+  },
+  "nyc": {
+    "require": [
+      "@babel/register"
+    ],
+    "sourceMap": false,
+    "instrument": false
   }
 }
