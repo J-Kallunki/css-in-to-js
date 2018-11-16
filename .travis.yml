@@ -13,7 +13,7 @@ notifications:
 before_script:
   - yarn
 script:
-  - yarn cover
+  - yarn test:lcov
   - yarn check-coverage
   - yarn build
 after_success:
