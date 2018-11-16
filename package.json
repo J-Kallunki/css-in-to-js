@@ -4,9 +4,11 @@
   "description": "CSS to CSS-in-JS and Styled converter",
   "main": "dist/index.js",
   "scripts": {
-    "test": "mocha --require @babel/polyfill --require @babel/register 'src/*.test.js'",
+    "test": "cross-env NODE_ENV=test nyc mocha --require @babel/polyfill --require @babel/register 'src/*.test.js'",
+    "test:withoutcover": "mocha --require @babel/polyfill --require @babel/register 'src/*.test.js'",
     "test:watch": "yarn test --watch",
-    "cover": "cross-env NODE_ENV=test nyc --reporter=lcov mocha 'src/*.test.js'",
+    "test:lcov": "cross-env NODE_ENV=test nyc --reporter=lcov mocha 'src/*.test.js'",
+    "check-coverage": "cross-env NODE_ENV=test nyc check-coverage --statements 80 --branches 80 --functions 80 --lines 80",
     "prebuild": "rimraf dist",
     "build": "babel src --out-dir dist --ignore 'src/*.test.js'"
   },
