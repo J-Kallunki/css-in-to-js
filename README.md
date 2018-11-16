@@ -1,4 +1,7 @@
 # @j-kallunki/css-in-to-js
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/J-Kallunki/css-in-to-js.svg)](https://greenkeeper.io/)
+
 Convert any CSS-string to styled-format object or object with CSS-declarations as strings.
 
 ## Usage
