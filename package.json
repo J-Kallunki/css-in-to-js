@@ -5,7 +5,7 @@
   "main": "dist/index.js",
   "scripts": {
     "test": "mocha --require @babel/polyfill --require @babel/register 'src/*.test.js'",
-    "test:watch": "mocha -w --require @babel/polyfill --require @babel/register 'src/*.test.js'",
+    "test:watch": "yarn test --watch",
     "prebuild": "rimraf dist",
     "build": "babel src --out-dir dist --ignore 'src/*.test.js'"
   },
