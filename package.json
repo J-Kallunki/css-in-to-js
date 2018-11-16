@@ -9,7 +9,7 @@
     "test:watch": "yarn test --watch",
     "test:lcov": "cross-env NODE_ENV=test nyc --reporter=lcov mocha 'src/*.test.js'",
     "check-coverage": "cross-env NODE_ENV=test nyc check-coverage --statements 80 --branches 80 --functions 80 --lines 80",
-    "validate": "yarn test:lcov && yarn check-coverage",
+    "validate": "yarn test && yarn check-coverage",
     "prebuild": "rimraf dist",
     "build": "babel src --out-dir dist --ignore 'src/*.test.js'"
   },
