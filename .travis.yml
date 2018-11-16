@@ -8,6 +8,7 @@ branches:
   only:
     - master
     - development
+    - /^greenkeeper/.*$/
 notifications:
   email: false
 before_script:
