@@ -3,12 +3,12 @@ Convert any CSS-string to styled-format object or object with CSS-declarations a
 
 ## Usage
 
-```
+```bash
 yarn add @j-kallunki/css-in-to-js
 OR
 npm install --save @j-kallunki/css-in-to-js
 ```
-```
+```javascript
 import { cssToJs } from '@j-kallunki/css-in-to-js';
 const cssObject = cssToJs(cssString);
 ```
@@ -18,7 +18,7 @@ const cssObject = cssToJs(cssString);
 ### `cssToString`
 
 If you wan't to get CSS-declarations in CSS-string format use:
-```
+```javascript
 const cssObject = cssToJs(cssString, { cssToString: true })
 ```
 
