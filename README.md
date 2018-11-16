@@ -1,7 +1,5 @@
 # @j-kallunki/css-in-to-js
 
-Convert any CSS-string to styled-format object or object with CSS-declarations as strings.
-
 [![travis build](https://img.shields.io/travis/J-Kallunki/css-in-to-js.svg?style=flat-square)](https://travis-ci.org/J-Kallunki/css-in-to-js)
 [![codecov coverage](https://img.shields.io/codecov/c/github/J-Kallunki/css-in-to-js.svg?style=flat-square)](https://codecov.io/github/J-Kallunki/css-in-to-js)
 [![version](https://img.shields.io/npm/v/@j-kallunki/css-in-to-js.svg?style=flat-square)](http://npm.im/@j-kallunki/css-in-to-js)
