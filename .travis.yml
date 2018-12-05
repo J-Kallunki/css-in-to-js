@@ -1,0 +1,21 @@
+language: node_js
+node_js:
+  - "node"
+cache:
+  directories:
+    - node_modules
+branches:
+  only:
+    - master
+    - development
+    - /^greenkeeper/.*$/
+notifications:
+  email: false
+before_script:
+  - yarn
+script:
+  - yarn test:lcov
+  - yarn check-coverage
+  - yarn build
+after_success:
+  - yarn report-coverage

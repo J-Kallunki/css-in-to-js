@@ -9,7 +9,7 @@ export const minifyCss = cssString =>
 
 export const cssToJs = (cssString, { cssToString = false } = {}) => {
   const root = postcss.parse(cssString, {});
-  const rootRules = root.nodes.filter(node => node.type === "rule");
+  const rootRules = !!root && !!root.nodes && root.nodes.filter(node => node.type === "rule");
 
   if (!rootRules || rootRules.length < 1) {
     if (console) console.error("No CSS selectors found");
@@ -21,8 +21,8 @@ export const cssToJs = (cssString, { cssToString = false } = {}) => {
       const camelProp = _.camelCase(prop);
       return prop.startsWith("-") ? _.upperFirst(camelProp) : camelProp;
     };
-    const selectors = selector.split(",").map(s => s.trim());
-    const cssDeclarations = nodes.filter(node => node.type === "decl");
+    const selectors = !!selector ? selector.split(",").map(s => s.trim()): [];
+    const cssDeclarations = !!nodes ? nodes.filter(node => node.type === "decl") : [];
     const cssDeclarationsFormatted = !!cssToString
       ? cssDeclarations.map(({ prop, value }) => `${prop}: ${value};`).join(" ")
       : cssDeclarations.reduce(
