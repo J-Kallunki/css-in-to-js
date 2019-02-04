@@ -26,7 +26,7 @@ describe('csstocssinjs', () => {
   it('Should be converted to an object', () => {
     expect(resets).to.be.a('object');
     expect(resets2).to.be.a('object');
-  })
+  });
 
   it('Should contain selectors', () => {
     const keys = Object.keys(resets);
@@ -37,7 +37,7 @@ describe('csstocssinjs', () => {
 
     expect(keys[3]).to.equal('[type="reset"]::-moz-focus-inner');
     expect(keys2[3]).to.equal('[type="reset"]::-moz-focus-inner');
-  })
+  });
 
   it('Should contain declarations', () => {
     const values = resets['html'];
@@ -47,15 +47,16 @@ describe('csstocssinjs', () => {
     expect(values['lineHeight']).to.equal('1.15');
 
     expect(values2).to.be.a('string');
-    expect(values2).to.equal('line-height: 1.15; -webkit-text-size-adjust: 100%;');
-
-  })
+    expect(values2).to.equal(
+      'line-height: 1.15; -webkit-text-size-adjust: 100%;'
+    );
+  });
 
   it('Should need selector', () => {
     const noSelector = cssToJs(`line-height: 1.15; /* 1 */`);
 
     expect(noSelector).to.equal(undefined);
-  })
+  });
 });
 
 describe('minifyCss', () => {
@@ -63,6 +64,9 @@ describe('minifyCss', () => {
 
   it('Should still be a string', () => {
     expect(minify).to.be.a('string');
-  })
+  });
 
+  it('Should be certain length of a string', () => {
+    expect(minify).to.have.lengthOf(208);
+  });
 });
