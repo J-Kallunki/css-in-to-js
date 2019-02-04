@@ -38,4 +38,4 @@ Minify CSS-string
 
 ## Acknowledgements
 
-Uses [CleanCSS](https://github.com/jakubpawlowicz/clean-css) for cleaning/minifying the CSS and [PostCSS](https://github.com/postcss/postcss) for parsing the CSS.
+Uses [PostCSS](https://github.com/postcss/postcss) for parsing the CSS.
