@@ -1,6 +1,6 @@
 {
   "name": "@j-kallunki/css-in-to-js",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "CSS to CSS-in-JS and Styled converter",
   "main": "dist/index.js",
   "scripts": {

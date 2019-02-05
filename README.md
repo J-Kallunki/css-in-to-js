@@ -4,7 +4,6 @@
 [![codecov coverage](https://img.shields.io/codecov/c/github/J-Kallunki/css-in-to-js.svg?style=flat-square)](https://codecov.io/github/J-Kallunki/css-in-to-js)
 [![version](https://img.shields.io/npm/v/@j-kallunki/css-in-to-js.svg?style=flat-square)](http://npm.im/@j-kallunki/css-in-to-js)
 [![downloads](https://img.shields.io/npm/dm/@j-kallunki/css-in-to-js.svg?style=flat-square)](http://npm-stat.com/charts.html?package=@j-kallunki/css-in-to-js&from=2015-08-01)
-[![Greenkeeper badge](https://badges.greenkeeper.io/J-Kallunki/css-in-to-js.svg)](https://greenkeeper.io/)
 [![MIT License](https://img.shields.io/npm/l/@j-kallunki/css-in-to-js.svg?style=flat-square)](http://opensource.org/licenses/MIT)
 
 Convert any CSS-string to Styled-format object or CSS-in-JS object with CSS-declarations as strings.
