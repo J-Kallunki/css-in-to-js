@@ -49,7 +49,20 @@ export const cssToJs = (cssString, { cssToString = false } = {}) => {
             {}
           )
         : { [selector]: cssDeclarationsFormatted };
-    return { ...acc, ...valuePairs };
+
+    const mergedValuePairs = Object.entries(valuePairs).reduce(
+      (mergedPairs, [key, value]) => {
+        const mergeValue = valueKey =>
+          !!cssToString
+            ? `${acc[valueKey]}${value}`
+            : { ...acc[valueKey], ...value };
+        const mergedValue = acc.hasOwnProperty(key) ? mergeValue(key) : value;
+        return { ...mergedPairs, [key]: mergedValue };
+      },
+      {}
+    );
+
+    return { ...acc, ...mergedValuePairs };
   }, {});
 };
 
