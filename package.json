@@ -1,6 +1,6 @@
 {
   "name": "@j-kallunki/css-in-to-js",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "CSS to CSS-in-JS and Styled converter",
   "main": "dist/index.js",
   "scripts": {
@@ -32,7 +32,7 @@
   },
   "homepage": "https://github.com/J-Kallunki/css-in-to-js#readme",
   "dependencies": {
-    "lodash": "4.17.11",
+    "lodash": "4.17.15",
     "postcss": "7.0.5"
   },
   "devDependencies": {
