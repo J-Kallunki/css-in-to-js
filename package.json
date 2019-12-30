@@ -1,6 +1,6 @@
 {
   "name": "@j-kallunki/css-in-to-js",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "CSS to CSS-in-JS and Styled converter",
   "main": "dist/index.js",
   "scripts": {
@@ -42,13 +42,13 @@
     "@babel/preset-env": "7.1.6",
     "@babel/register": "7.0.0",
     "babel-plugin-inline-import": "3.0.0",
-    "babel-plugin-istanbul": "5.1.0",
+    "babel-plugin-istanbul": "5.2.0",
     "chai": "4.2.0",
     "cross-env": "5.2.0",
     "husky": "1.1.4",
-    "lint-staged": "8.0.4",
+    "lint-staged": "9.2.3",
     "mocha": "5.2.0",
-    "nyc": "13.1.0",
+    "nyc": "14.1.1",
     "prettier": "1.15.2",
     "rimraf": "2.6.2"
   },
