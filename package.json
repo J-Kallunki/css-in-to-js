@@ -33,7 +33,7 @@
   "homepage": "https://github.com/J-Kallunki/css-in-to-js#readme",
   "dependencies": {
     "lodash": "4.17.15",
-    "postcss": "7.0.5"
+    "postcss": "8.2.10"
   },
   "devDependencies": {
     "@babel/cli": "7.1.5",
